@@ -1,0 +1,2678 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#"
+     xml:base="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfb="http://protege.cim3.net/cgi-bin/wiki.pl?SWRLTabRDFBuiltIns#nidB1V"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn">
+        <dc:creator xml:lang="it">Giacomo Costarelli</dc:creator>
+        <dc:creator xml:lang="it">Giuseppe Gabbia</dc:creator>
+        <dc:date>2019/03/28</dc:date>
+        <dc:description xml:lang="it">LinSyn è un&apos;ontologia che mira a fornire una base sufficiente della Linguistica atta alla rappresentazione degli elementi morfologici e sintattici principali della lingua Italiana.
+Tale base, successivamente,è utilizzata con lo scopo di modellare i sinonimi dei vocaboli che verranno utilizzati all&apos;interno dell&apos;ontologia stessa.</dc:description>
+        <dc:title xml:lang="it">LinSyn: un&apos;ontologia per i sinonimi dei vocaboli della lingua italiana</dc:title>
+        <vann:preferredNamespacePrefix>LinSyn</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#</vann:preferredNamespaceUri>
+        <rdfs:label xml:lang="it">LinSyn</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#description"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#MèCompostoS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#MèCompostoS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento"/>
+        <rdfs:label xml:lang="it">MorfemaèCompostoDaSegmento</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VèCompostoM -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VèCompostoM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfema"/>
+        <rdfs:label xml:lang="it">VocaboloèCompostoDaMorfema</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissione -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissione">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento"/>
+        <rdfs:label xml:lang="it">haEmissione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissioneC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissioneC">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissione"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+        <rdfs:label xml:lang="it">haEmissioneConsonante</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissioneV -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissioneV">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissione"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali"/>
+        <rdfs:label xml:lang="it">haEmissioneVocale</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haModo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haModo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+        <rdfs:label xml:lang="it">haModo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haTermineFrequente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haTermineFrequente">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Insieme"/>
+        <rdfs:label xml:lang="it">haTermineFrequente</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#hasMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#isMemberOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Collezione"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+        <rdfs:label xml:lang="it">haComeMembro</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#isMemberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Collezione"/>
+        <rdfs:label xml:lang="it">èMembroDi</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#èCompostoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#èCompostoDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VèCompostoM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#MèCompostoS"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="it">èCompostoDa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#èCostituito -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#èCostituito">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento"/>
+        <rdfs:label xml:lang="it">èCostituito</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#appartiene -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#appartiene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>aperta</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>chiusa</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dimensione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dimensione">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Collezione"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haConiugazione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haConiugazione">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>prima</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>seconda</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>terza</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="it">haConiugazione</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenere -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenere">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>F</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>M</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="it">haGenere</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenereAggettivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenereAggettivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenere"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <rdfs:label xml:lang="it">haGenereAggettivo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenereArticolo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenereArticolo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenere"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+        <rdfs:label xml:lang="it">haGenereArticolo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenereNome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenereNome">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenere"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <rdfs:label xml:lang="it">haGenereSostantivo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenerePreposizione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenerePreposizione">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenere"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Preposizione"/>
+        <rdfs:label xml:lang="it">haGenerePreposizione</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenerePronome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenerePronome">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haGenere"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdfs:label xml:lang="it">haGenerePronome</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumero">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>P</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>S</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="it">haNumero</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroAggettivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroAggettivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <rdfs:label xml:lang="it">haNumeroAggettivo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroArticolo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroArticolo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+        <rdfs:label xml:lang="it">haNumeroArticolo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroNome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroNome">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <rdfs:label xml:lang="it">haNumeroSostantivo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroPreposizione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroPreposizione">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Preposizione"/>
+        <rdfs:label xml:lang="it">haNumeroPreposizione</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroPronome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumeroPronome">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haNumero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdfs:label xml:lang="it">haNumeroPronome</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haOccorrenza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haOccorrenza">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="it">haOccorrenza</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haTipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haTipo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Congiunzione"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>coord</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>subord</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="it">haTipo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#secondaClasse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#secondaClasse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>no</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>sì</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Affisso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Affisso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfema"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Infisso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Prefisso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Suffisso"/>
+        </owl:disjointUnionOf>
+        <rdf:description xml:lang="it">Morfemi adoperati nella formazione delle parole, distinti in prefissi, infissi e suffissi, secondo che compaiano dinanzi, nell’interno o dopo la radice o il tema.</rdf:description>
+        <rdfs:label xml:lang="it">Affisso</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Affix</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte variabile del discorso che esprime gli attributi di qualità, quantità, ecc. della persona o della cosa indicata dal sostantivo a cui si riferisce.</rdf:description>
+        <rdfs:label xml:lang="it">Aggettivo</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Adjectival</skos:exactMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#AdjectivePOS</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoDeterminativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoDeterminativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo"/>
+        <rdf:description xml:lang="it">Aggettivo che serve a determinare meglio un sostantivo.
+Esso rinvia piuttosto a nozioni di appartenenza o di quantità, definita o meno.</rdf:description>
+        <rdfs:label xml:lang="it">AggettivoDeterminativo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoEsclamativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoEsclamativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoDeterminativo"/>
+        <rdf:description xml:lang="it">Consente di fare un’esclamazione (di sorpresa, di meraviglia, di stupore…) circa la qualità, la quantità o l’identità del nome a cui si riferiscono.</rdf:description>
+        <rdfs:label xml:lang="it">AggettivoEsclamativo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoIndefinito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoIndefinito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoDeterminativo"/>
+        <rdf:description xml:lang="it">Indica qualcuno o qualcosa in modo generico e indeterminato.</rdf:description>
+        <rdfs:label xml:lang="it">AggettivoIndefinito</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoInterrogativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoInterrogativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoDeterminativo"/>
+        <rdf:description xml:lang="it">Consente di porre una domanda circa la qualità, la quantità o l’identità del nome a cui si riferiscono.</rdf:description>
+        <rdfs:label xml:lang="it">AggettivoInterrogativo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoPossessivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoPossessivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoDeterminativo"/>
+        <rdf:description xml:lang="it">Aggettivo che attraverso la radice, precisa il possessore, cioè la persona a cui appartengono gli elementi a cui si riferiscono. e attraverso la desinenza, che si accorda in genere e numero con un sostantivo, permette di individuare l’elemento posseduto.</rdf:description>
+        <rdfs:label xml:lang="it">AggettivoPossessivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <rdf:description xml:lang="it">Aggettivo che indica una qualità del nome a cui sono riferiti.
+
+Esso esprime una specifica qualità del nome cui corrispondono: aspetto, colore, forma, grandezza, ma anche qualità morali o intellettuali.</rdf:description>
+        <rdfs:label xml:lang="it">AggettivoQualificativo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#èCostituito"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#èCostituito"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#èCostituito"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Particella grammaticale che si premette al sostantivo o a parti del discorso sostantivate, per identificarlo come essere od oggetto individuato (aggettivo determinativo) o come essere od oggetto non individuato (aggettivo indeterminativo).</rdf:description>
+        <rdfs:label xml:lang="it">Articolo</rdfs:label>
+        <skos:broadMatch>http://purl.org/linguistics/gold/Article</skos:broadMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#ArticlePOS</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloDeterminativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloDeterminativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+        <rdf:description xml:lang="it">Articolo utilizzato in riferimento a una categoria generale di persone, animali, oggetti, concetti.</rdf:description>
+        <rdfs:label xml:lang="it">ArticoloDeterminativo</rdfs:label>
+        <skos:broadMatch>http://purl.org/linguistics/gold/DefiniteArticle</skos:broadMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloIndeterminativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloIndeterminativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+        <rdf:description xml:lang="it">Articolo utilizzato in riferimento a un elemento che fa parte di una categoria di persone, animali, oggetti, concetti.</rdf:description>
+        <rdfs:label xml:lang="it">ArticoloIndeterminativo</rdfs:label>
+        <skos:broadMatch>http://purl.org/linguistics/gold/IndefiniteArticle</skos:broadMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloPartitivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloPartitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+        <rdf:description xml:lang="it">Iindica una parte indeterminata di un insieme, una quantità imprecisata. 
+Si tratta di una funzione particolare delle preposizioni articolate create con la preposizione semplice &quot;di&quot;.</rdf:description>
+        <rdfs:label xml:lang="it">ArticoloPartitivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte invariabile del discorso che determina il verbo, l’aggettivo o un altro avverbio.</rdf:description>
+        <rdfs:label xml:lang="it">Avverbio</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Adverbial</skos:exactMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#AdverbPOS</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiLuogo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiLuogo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio"/>
+        <rdf:description xml:lang="it">Utilizzato per specificare il luogo di un’azione, la collocazione di una persona o di un oggetto nello spazio e la distanza di una persona o di un oggetto rispetto a chi parla o ascolta.</rdf:description>
+        <rdfs:label xml:lang="it">AvverbioDiLuogo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiModo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiModo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio"/>
+        <rdf:description xml:lang="it">Indica il modo con cui si svolge un fatto espresso da un verbo, un aggettivo o un altro avverbio.</rdf:description>
+        <rdfs:label xml:lang="it">AvverbioDiModo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiQuantità -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiQuantità">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio"/>
+        <rdf:description xml:lang="it">Esprime in modo indefinito una quantità, sia essa numerabile o no. 
+Esso aggiunge all’elemento che modifica un’informazione concernente la misura di una grandezza, di cui non fornisce indicazione precisa.</rdf:description>
+        <rdfs:label xml:lang="it">AvverbioDiQuantità</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiTempo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiTempo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio"/>
+        <rdf:description xml:lang="it">Indica la circostanza o il periodo in cui avviene un fatto espresso da un verbo, un aggettivo o un altro avverbio.</rdf:description>
+        <rdfs:label xml:lang="it">AvverbioDiTempo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Collezione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Collezione">
+        <rdf:description xml:lang="it">Qualsiasi contenitore per entità che condividono una o più proprietà comuni. 
+Per esempio: oggetti in pietra, la collezione egizia del Louvre, ecc...</rdf:description>
+        <rdfs:label xml:lang="it">Collezione</rdfs:label>
+        <skos:exactMatch>http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Congiunzione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Congiunzione">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte invariabile del discorso usata per collegare tra loro due elementi all’interno di una proposizione oppure due o più proposizioni all’interno di un periodo.</rdf:description>
+        <rdfs:label xml:lang="it">Congiunzione</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Conjunction</skos:exactMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#ConjunctionPOS</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#CongiunzioneComposta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#CongiunzioneComposta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Congiunzione"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#CongiunzioneSemplice"/>
+        <rdf:description xml:lang="it">Congiunzione derivata dalla fusione di più parole.</rdf:description>
+        <rdfs:label xml:lang="it">CongiunzioneComposta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#CongiunzioneSemplice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#CongiunzioneSemplice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Congiunzione"/>
+        <rdf:description xml:lang="it">Congiunzione composta da una sola parola.</rdf:description>
+        <rdfs:label xml:lang="it">CongiunzioneSemplice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissione"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        <rdf:description xml:lang="it">Fonema di una lingua che viene pronunciato con il canale vocale chiuso o semichiuso. 
+Non può fare sillaba da solo, contrapposto alla vocale.</rdf:description>
+        <rdfs:label xml:lang="it">Consonante</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Consonant</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Fonologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Fonologia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Linguistica"/>
+        <rdf:description xml:lang="it">Branca della linguistica che studia i sistemi fonologici delle lingue del mondo.
+In particolare, la fonologia si occupa di come i foni, ovvero i suoni linguistici, siano usati per distinguere significati e della competenza che i parlanti posseggono nei riguardi del sistema fonologico della propria lingua.
+
+Il termine stesso è anche usato in riferimento al sistema fonologico di una determinata lingua, intendendo con fonologia una delle parti della grammatica di quella lingua.</rdf:description>
+        <rdfs:label xml:lang="it">Fonologia</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/PhoneticProperty</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Infisso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Infisso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Affisso"/>
+        <rdf:description xml:lang="it">Elemento, di derivazione o determinazione morfologica, costituito da uno o più fonemi o sillabe, che è inserito nell’interno di una parola, per lo più nell’interno della radice stessa.
+Si contrappone a prefisso e suffisso.</rdf:description>
+        <rdfs:label xml:lang="it">Infisso</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Infix</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Insieme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Insieme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Collezione"/>
+        <rdf:description xml:lang="it">Una delle strutture matematiche fondamentali.
+L&apos;insieme è una collezione di elementi distinti dello stesso tipo.</rdf:description>
+        <rdfs:label xml:lang="it">Insieme</rdfs:label>
+        <skos:exactMatch>http://www.ontologydesignpatterns.org/cp/owl/set.owl#Set</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Interiezione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Interiezione">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte del discorso invariabile con il valore di frase, usata per esprimere emozioni o stati soggettivi del parlante. 
+
+Priva di legami sintattici con le altre parti del discorso, corrisponde, da un punto di vista pragmatico, a un intero atto linguistico.</rdf:description>
+        <rdfs:label xml:lang="it">Interiezione</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Interjection</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezioneImpropria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezioneImpropria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Interiezione"/>
+        <rdf:description xml:lang="it">Parte del discorso autonoma dal valore occasionalmente olofrastico: si tratta di una voce appartenente al sistema lessicale che, usata in origine in frasi ellittiche, ha assunto il valore di frase intera.</rdf:description>
+        <rdfs:label xml:lang="it">InteriezioneImpropria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezionePropria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezionePropria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Interiezione"/>
+        <rdf:description xml:lang="it">Voce priva di significato lessicale, il cui impiego ha sempre valore olofrastico. Caratteristica principale è di cambiare significato in relazione al contesto.</rdf:description>
+        <rdfs:label xml:lang="it">InteriezionePropria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Linguistica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Linguistica">
+        <rdf:description xml:lang="it">É la scienza del linguaggio i cui compiti primari, secondo Ferdinand de Saussure, sono descrivere il maggior numero possibile di lingue storico-naturali e famiglie di lingue dal punto di visto funzionale, temporale, psico-sociologico, culturale e storico, individuare i fattori che influenzano tutte le lingue e definire e delimitare i propri metodi di indagine e le proprie nozioni fondamentali.</rdf:description>
+        <rdfs:label xml:lang="it">Linguistica</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/LinguisticProperty</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#LocuzioneInteriettiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#LocuzioneInteriettiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Interiezione"/>
+        <rdf:description xml:lang="it">Locuzione composta da due o più parole (a volte da un’intera frase) che hanno funzione di interiezioni.</rdf:description>
+        <rdfs:label xml:lang="it">LocuzioneInteriettiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#condizionale"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#congiuntivo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#gerundio"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#imperativo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#indicativo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#infinito"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#participio"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfologia"/>
+        <rdf:description xml:lang="it">Utilizzato per indicare sia l&apos;atteggiamento che un parlante instaura con il proprio interlocutore sia l&apos;atteggiamento che un parlante assume in rapporto alla propria comunicazione.</rdf:description>
+        <rdfs:label xml:lang="it">Modo</rdfs:label>
+        <skos:broadMatch>http://purl.org/linguistics/gold/MoodProperty</skos:broadMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#Mood</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfema">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#UnitàLinguistica"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#MèCompostoS"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdf:description xml:lang="it">Elemento formale che conferisce aspetto e funzionalità alle parole e alle radici, definendone la categoria grammaticale e la funzione sintattica.</rdf:description>
+        <rdfs:label xml:lang="it">Morfema</rdfs:label>
+        <skos:broadMatch>http://purl.org/linguistics/gold/Morpheme</skos:broadMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfologia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Linguistica"/>
+        <rdf:description xml:lang="it">Parte della linguistica che ha per oggetto lo studio della struttura grammaticale delle parole e che ne stabilisce la classificazione e l&apos;appartenenza a determinate categorie come il nome, il pronome, il verbo, l&apos;aggettivo e le forme della flessione, come la coniugazione per i verbi e la declinazione per i nomi distinguendosi dalla fonologia, dalla sintassi e dal lessico. 
+
+Inoltre, indaga i meccanismi secondo i quali le unità portatrici di significati semplici si organizzano in significati più complessi ovvero le parole.</rdf:description>
+        <rdfs:label xml:lang="it">Morfologia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfologia"/>
+        <rdf:description xml:lang="it">Nella grammatica tradizionale, una parte del discorso è una categoria di parole (o, più in generale, di elementi lessicali) che hanno proprietà grammaticali simili. 
+
+Le parole che sono assegnate alla stessa parte del discorso generalmente mostrano un comportamento simile in termini di sintassi e talvolta in termini di morfologia, in quanto subiscono un&apos;inflessione per proprietà simili.</rdf:description>
+        <rdfs:label xml:lang="it">ParteDelDiscorso</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/PartOfSpeechProperty</skos:exactMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#PartOfSpeech</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Prefisso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Prefisso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Affisso"/>
+        <rdf:description xml:lang="it">Morfema che viene anteposto alla radice o al tema, nominale o verbale, per la formazione di una nuova parola.
+Costituisce, con l’infisso e il suffisso, uno dei tre tipi di affisso.</rdf:description>
+        <rdfs:label xml:lang="it">Prefisso</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Prefix</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Preposizione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Preposizione">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte invariabile del discorso che, premessa a un nome, a un pronome, a un avverbio o a un verbo all’infinito, ne precisa la funzione sintattica.</rdf:description>
+        <rdfs:label xml:lang="it">Preposizione</rdfs:label>
+        <skos:broadMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#AdpositionPOS</skos:broadMatch>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Preposition</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PreposizioneArticolata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PreposizioneArticolata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Preposizione"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PreposizioneSemplice"/>
+        <rdf:description xml:lang="it">Preposizione formata dall&apos;unione di una preposizione semplice con un articolo determinativo.</rdf:description>
+        <rdfs:label xml:lang="it">PreposizioneArticolata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PreposizioneSemplice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PreposizioneSemplice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Preposizione"/>
+        <rdf:description xml:lang="it">Preposizione che, in composizione con un articolo determinativo, forma una proposizione articolata.</rdf:description>
+        <rdfs:label xml:lang="it">PreposizioneSemplice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte variabile del discorso che si usa al posto di un altro elemento della frase, solitamente il nome.</rdf:description>
+        <rdfs:label xml:lang="it">Pronome</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Pronominal</skos:exactMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#PronounPOS</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeEsclamativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeEsclamativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdf:description xml:lang="it">Pronome atto ad introdurre proposizioni esclamative nei rispettivi ruoli grammaticali.</rdf:description>
+        <rdfs:label xml:lang="it">PronomeEsclamativo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeIndefinito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeIndefinito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdf:description xml:lang="it">Pronome che indica qualcuno o qualcosa in modo generico e indeterminato.</rdf:description>
+        <rdfs:label xml:lang="it">PronomeIndefinito</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/IndefinitePronoun</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeInterrogativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeInterrogativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdf:description xml:lang="it">Pronome atto alla formulazione di interrogazioni dirette e indirette.</rdf:description>
+        <rdfs:label xml:lang="it">PronomeInterrogativo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomePersonale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomePersonale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdf:description xml:lang="it">Pronome che indica chi o che cosa è coinvolto in una comunicazione linguistica, tralasciando di ripetere l’elemento grammaticale (soggetto o complemento) a cui si riferisce.</rdf:description>
+        <rdfs:label xml:lang="it">PronomePersonale</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/PersonalPronoun</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomePossessivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomePossessivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdf:description xml:lang="it">Pronome che serve a precisare a chi appartiene la persona, l&apos;animale o la cosa indicati dal nome che sostituisce.</rdf:description>
+        <rdfs:label xml:lang="it">PronomePossessivo</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/PossessivePronoun</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeRelativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeRelativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Pronome"/>
+        <rdf:description xml:lang="it">Pronome atto a mettere in relazione una proposizione principale con una proposizione subordinata. 
+
+Può prendere il posto di un elemento (un nome, un pronome, una frase) della frase reggente, detto antecedente.</rdf:description>
+        <rdfs:label xml:lang="it">PronomeRelativo</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/RelativePronoun</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFonetiche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFonetiche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Fonologia"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali"/>
+        </owl:disjointUnionOf>
+        <rdf:description xml:lang="it">Lo studio dei suoni di una lingua sotto l&apos;aspetto della loro produzione attraverso l&apos;apparato fonatorio, descrive quali organi intervengono nella produzione dei suoni, quali posizioni assumono e come queste posizioni interferiscono con il percorso dell&apos;aria in uscita dai polmoni attraverso la bocca, il naso o la gola per produrre i differenti foni.</rdf:description>
+        <rdfs:label xml:lang="it">Proprietà fonetiche</rdfs:label>
+        <skos:broadMatch>http://purl.org/linguistics/gold/PhoneticProperty</skos:broadMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFonetiche"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali"/>
+        <rdf:description xml:lang="it">Le consonanti si realizzano tramite l&apos;utilizzo del diaframma. 
+L&apos;emissione delle stesse segue il criterio del modo di articolazione ovvero l&apos;emissione dell&apos;aria in modo ostruito o libero.</rdf:description>
+        <rdfs:label xml:lang="it">ProprietàFoneticheConsonanti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFonetiche"/>
+        <rdf:description xml:lang="it">Le vocali sono realizzate tramite vibrazione delle corde vocali. 
+Per la realizzazione delle vocali dobbiamo, quindi, tener conto del criterio di anteriorità/posteriorità che è determinato dal movimento della lingua.
+Se con tale movimento, effettuato in senso orizzontale, la lingua retrocede verso l&apos;interno del tratto vocale allora si formano le vocali posteriori; altrimenti, se la lingua avanza verso l&apos;esterno del tratto vocale si formano le vocali anteriori.</rdf:description>
+        <rdfs:label xml:lang="it">ProprietàFoneticheVocali</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#UnitàLinguistica"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        </owl:disjointUnionOf>
+        <rdf:description xml:lang="it">Termine usato per indicare una porzione, arbitrariamente delimitata, della catena parlata.</rdf:description>
+        <rdfs:label xml:lang="it">Segmento</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Segment</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sintassi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sintassi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Linguistica"/>
+        <rdf:description xml:lang="it">Nella linguistica descrittiva, una delle quattro parti tradizionali della descrizione linguistica, che ha per oggetto lo studio della connessione di unità minori per formare unità maggiori.
+Si occupa dei fonemi, morfemi e vocaboli calati nel contesto della frase mediante i quali il parlante pone in mutuo rapporto gli elementi lessicali per la formazione di un’espressione compiuta (frase, periodo).</rdf:description>
+        <rdfs:label xml:lang="it">Sintassi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte del discorso che indica una singola persona, un singolo animale o una singola cosa, o una classe di persone, animali o cose.</rdf:description>
+        <rdfs:label xml:lang="it">Sostantivo</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Noun</skos:exactMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#NounPOS</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoAstratto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoAstratto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoConcreto"/>
+        <rdf:description xml:lang="it">Contrapposto al sostantivo concreto, si riferisce ad un&apos;entità non percepibile fisicamente ma conoscibile soltanto attraverso la mente, come quelle che indicano uno stato d’animo, una sensazione o un sentimento.</rdf:description>
+        <rdfs:label xml:lang="it">SostantivoAstratto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoCollettivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoCollettivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoIndividuale"/>
+        <rdf:description xml:lang="it">Indicano un gruppo generico di persone, animali o cose.</rdf:description>
+        <rdfs:label xml:lang="it">SostantivoCollettivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoComune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoComune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoProprio"/>
+        <rdf:description xml:lang="it">Sostantivo, opposto al nome proprio, che ha per referente una classe di individui (siano essi persone, oggetti o concetti) e talvolta, con il concorso di uno specificatore, anche singoli individui.</rdf:description>
+        <rdfs:label xml:lang="it">SostantivoComune</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/CommonNoun</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoConcreto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoConcreto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <rdf:description xml:lang="it">Sostantivo indicante «oggetti di natura fisicamente percettibile» o «tutte le entità direttamente percepibili dai sensi».</rdf:description>
+        <rdfs:label xml:lang="it">SostantivoConcreto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoIndividuale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoIndividuale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <rdf:description xml:lang="it">Sostantivo che indica un singolo elemento di una categoria, persona, animale o cosa.</rdf:description>
+        <rdfs:label xml:lang="it">SostantivoIndividuale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoProprio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoProprio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <rdf:description xml:lang="it">Identificano uno specifico elemento all’interno di una categoria.</rdf:description>
+        <rdfs:label xml:lang="it">SostantivoProprio</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/ProperNoun</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Suffisso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Suffisso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Affisso"/>
+        <rdf:description xml:lang="it">Elemento formativo di una parola, con funzioni di derivazione e di determinazione morfologica e semantica, costituito da uno o più fonemi o sillabe, posposti alla radice o al tema.
+Con il prefisso e l’infisso, il suffisso costituisce la categoria degli affissi.</rdf:description>
+        <rdfs:label xml:lang="it">Suffisso</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Suffix</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Morfema"/>
+        <rdf:description xml:lang="it">In linguistica, la parte di una parola che resta tolta la desinenza.</rdf:description>
+        <rdfs:label xml:lang="it">Tema</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Stem</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#UnitàLinguistica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#UnitàLinguistica">
+        <rdf:description xml:lang="it">Elemento minimale considerabile all&apos;interno dei molteplici aspetti della linguistica.</rdf:description>
+        <rdfs:label xml:lang="it">UnitàLinguistica</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/LinguisticUnit</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ParteDelDiscorso"/>
+        <rdf:description xml:lang="it">Parte variabile del discorso che indica azione, stato, o divenire.</rdf:description>
+        <rdfs:label xml:lang="it">Verbo</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Verbal</skos:exactMatch>
+        <skos:exactMatch>http://www.lexinfo.net/ontology/2.0/lexinfo#VerbPOS</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboAusiliare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboAusiliare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <rdf:description xml:lang="it">Verbo che, oltre al suo uso e significato autonomo, se impiegato in unione con le forme non finite di altri verbi, svolge una funzione di determinazione morfologica (ausiliari propriamente detti), di aggiunta di un particolare valore semantico (verbi servili) e di fornire una certa informazione aspettuale.</rdf:description>
+        <rdfs:label xml:lang="it">VerboAusiliare</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Auxiliary</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboCopulativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboCopulativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <rdf:description xml:lang="it">Verbo che svolge principalmente la funzione di unire il soggetto della frase a un nome o a un aggettivo.
+A differenza dei verbi predicativi non possono essere usati da soli e per dar luogo a una frase di senso compiuto devono essere accompagnati da un complemento predicativo dell’oggetto o del soggetto.</rdf:description>
+        <rdfs:label xml:lang="it">VerboCopulativo</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Copulative</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboModale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboModale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboAusiliare"/>
+        <rdf:description xml:lang="it">Verbo facente parte dell’ampia classe dei verbi ausiliari e che, collegandosi direttamente a un verbo all’infinito, conferisce all’azione espressa dal predicato una specifica modalità.</rdf:description>
+        <rdfs:label xml:lang="it">VerboModale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboPredicativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboPredicativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <rdf:description xml:lang="it">Verbo che esprime un significato autonomo, ha senso compiuto in sé e svolge la funzione di predicato verbale.</rdf:description>
+        <rdfs:label xml:lang="it">VerboPredicativo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#UnitàLinguistica"/>
+        <rdf:description xml:lang="it">Ciascuna parola considerata come unità lessicale autonoma, in quanto cioè esprime uno o più significati, e ha una forma grammaticale e una grafia determinata.</rdf:description>
+        <rdfs:label xml:lang="it">Vocabolo</rdfs:label>
+        <skos:exactMatch>http://lemon-model.net/lemon#Word</skos:exactMatch>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Term</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Segmento"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haEmissione"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#u"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdf:description xml:lang="it">Fonema di una lingua, in contrapposizione alla consonante, caratterizzato dall’apertura, diversa secondo le varie vocali, del canale di fonazione, dalla continuità dell’articolazione e quindi dal fatto di essere, di norma, il centro della sillaba.</rdf:description>
+        <rdfs:label xml:lang="it">Vocale</rdfs:label>
+        <skos:exactMatch>http://purl.org/linguistics/gold/Vowel</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Beppe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Beppe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoProprio"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Giacomo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Giacomo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoProprio"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Suffisso"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+        <haEmissioneV rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#centrale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#aberrant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#aberrant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#b"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#r"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#t"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#aberranti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#aberranti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#aberrant"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <haGenereAggettivo>F</haGenereAggettivo>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>P</haNumeroAggettivo>
+        <rdfs:label xml:lang="it">aberranti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#affinché -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#affinché">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#CongiunzioneComposta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#affricata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#affricata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#albero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#albero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoConcreto"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">305</haOccorrenza>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#amare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#amare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <haConiugazione>prima</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ancora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ancora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiTempo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#anteriore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#anteriore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#avere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#avere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboAusiliare"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#b"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#b"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#l"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#belletteristico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#belletteristico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+        <rdfs:label xml:lang="it">belletteristico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bellezza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bellezza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+        <rdfs:label xml:lang="it">bellezza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bellicoso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bellicoso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <rdfs:label xml:lang="it">bellicoso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bellimbusto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bellimbusto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+        <rdfs:label xml:lang="it">bellimbusto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bell"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiBello"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1929</haOccorrenza>
+        <rdfs:label xml:lang="it">bello</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#branc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#branc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#b"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#c"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#r"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#branco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#branco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoCollettivo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#branc"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">197</haOccorrenza>
+        <rdfs:label xml:lang="it">branco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#brevemente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#brevemente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#c"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#centrale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#centrale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ciascuno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ciascuno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoIndefinito"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#con -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#con">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PreposizioneSemplice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#condizionale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#condizionale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#congiuntivo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#congiuntivo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#cui -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#cui">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeRelativo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#d"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#della -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#della">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PreposizioneArticolata"/>
+        <haGenerePreposizione>F</haGenerePreposizione>
+        <haNumeroPreposizione>S</haNumeroPreposizione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dormire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dormire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <haConiugazione>terza</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dovere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#dovere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboModale"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#CongiunzioneSemplice"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+        <haEmissioneV rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#anteriore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#essere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#essere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboCopulativo"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#f">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#f"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fricativa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fricativa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fricativa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fusto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fusto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</haOccorrenza>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#g -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#g">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#g"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#gerundio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#gerundio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#giocare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#giocare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <haConiugazione>prima</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#h -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#h">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#h"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fricativa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <haEmissioneV rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#anteriore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#il -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#il">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloDeterminativo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#imperativo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#imperativo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#indicativo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#indicativo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#indietro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#indietro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiLuogo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#infinito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#infinito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#inizial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#inizial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#l"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#z"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#iniziale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#iniziale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#inizial"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiPrimo"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">103</haOccorrenza>
+        <rdfs:label xml:lang="it">iniziale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#l -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#l">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#l"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#laterale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#laterale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#laterale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#lo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#lo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloDeterminativo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#lupo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#lupo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoIndividuale"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#m">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#m"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#nasale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#mio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#mio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomePossessivo"/>
+        <haGenerePronome>M</haGenerePronome>
+        <haNumeroPronome>S</haNumeroPronome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#nasale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#nasale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#nasale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#nessuno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#nessuno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeIndefinito"/>
+        <haGenerePronome>M</haGenerePronome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Suffisso"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <haEmissioneV rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#posteriore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#originar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#originar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#g"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#r"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#originario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#originario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#originar"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiPrimo"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</haOccorrenza>
+        <rdfs:label xml:lang="it">originario</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#participio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#participio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Modo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#partire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#partire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboPredicativo"/>
+        <haConiugazione>terza</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#paura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#paura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoAstratto"/>
+        <haGenereNome>F</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#piant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#piant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#t"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#pianta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#pianta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#a"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#piant"/>
+        <haGenereNome>F</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">292</haOccorrenza>
+        <rdfs:label xml:lang="it">pianta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#poco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#poco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AvverbioDiQuantità"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#polivibrante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#polivibrante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheConsonanti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#pomet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#pomet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#m"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#t"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#pometo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#pometo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#pomet"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</haOccorrenza>
+        <rdfs:label xml:lang="it">pometo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#posteriore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#posteriore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ProprietàFoneticheVocali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#potere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#potere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboModale"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#prim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#prim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#m"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#r"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#primo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#primo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#prim"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiPrimo"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4991</haOccorrenza>
+        <rdfs:label xml:lang="it">primo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#q -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#q">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#q"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#questo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#questo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoDeterminativo"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#r -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#r">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#r"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#polivibrante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ricevere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ricevere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#s -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#s">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#s"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fricativa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sapere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sapere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboModale"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiBello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiBello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Insieme"/>
+        <haTermineFrequente rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#bello"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiPrimo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiPrimo">
+        <haTermineFrequente rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#primo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#splendid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#splendid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#d"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#i"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#l"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#splendido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#splendido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#splendid"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiBello"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">197</haOccorrenza>
+        <rdfs:label xml:lang="it">splendido</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#stupend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#stupend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Tema"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#d"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#e"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#n"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#p"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#s"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#t"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#u"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#stupendo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#stupendo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoQualificativo"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#o"/>
+        <VèCompostoM rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#stupend"/>
+        <isMemberOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#sinonimiBello"/>
+        <haGenereAggettivo>M</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+        <haOccorrenza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</haOccorrenza>
+        <rdfs:label xml:lang="it">stupendo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#t -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#t">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#t"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#occlusiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#tu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#tu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomePersonale"/>
+        <haNumeroPronome>S</haNumeroPronome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#tua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#tua">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoPossessivo"/>
+        <haGenereAggettivo>F</haGenereAggettivo>
+        <haNumeroAggettivo>S</haNumeroAggettivo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#u -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#u">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocale"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#u"/>
+        <haEmissioneV rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#posteriore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#uno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#uno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ArticoloIndeterminativo"/>
+        <haGenereArticolo>M</haGenereArticolo>
+        <haNumeroArticolo>S</haNumeroArticolo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#uomo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#uomo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#SostantivoComune"/>
+        <haGenereNome>M</haGenereNome>
+        <haNumeroNome>S</haNumeroNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#v -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#v">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#v"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fricativa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#vendere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#vendere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#vestire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#vestire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        <haConiugazione>terza</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#volere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#volere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboModale"/>
+        <haConiugazione>seconda</haConiugazione>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#z">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Consonante"/>
+        <MèCompostoS rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#z"/>
+        <haEmissioneC rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#fricativa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#al_ladro! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#al_ladro!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#LocuzioneInteriettiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#che! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#che!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoEsclamativo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ehi! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#ehi!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezionePropria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#quale? -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#quale?">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#AggettivoInterrogativo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#PronomeInterrogativo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#zitto! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#zitto!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezioneImpropria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Aggettivo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Articolo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Avverbio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Congiunzione"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Interiezione"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Preposizione"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Sostantivo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Verbo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Infisso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Prefisso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Suffisso"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezioneImpropria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#InteriezionePropria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#LocuzioneInteriettiva"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboAusiliare"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboCopulativo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#VerboPredicativo"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#i1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#sv">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haOccorrenza"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#hasMember"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#i1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#x"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Insieme"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#i1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#i1"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderByDescending"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#Vocabolo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/LinSyn#haOccorrenza"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#makeSet"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#sv"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderByDescending"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#x"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2019/2/ProgettoModSem#occ"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
